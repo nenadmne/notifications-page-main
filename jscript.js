@@ -164,7 +164,7 @@ function read(){
     document.getElementById('one').style.backgroundColor='unset'
     document.getElementById('two').style.backgroundColor='unset'
     document.getElementById('three').style.backgroundColor='unset'
-
+    document.getElementById('count').textContent='0'
 
     if (document.getElementById('top-para1').contains(document.getElementById('circle1')) === true) {
         document.getElementById('top-para1').removeChild(document.getElementById('circle1'));
