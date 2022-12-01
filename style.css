@@ -1,0 +1,227 @@
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 1000px;
+    min-width: 375px;
+}
+
+body, main, .one, .two, .three, .four, .five, .six, .seven, .notification, 
+.right, .left, .picture, .five-right, .head, .count, .mark {
+    display: flex;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+    margin-bottom: 3%;
+    padding: 5%;
+}
+
+body {
+    padding: 10% 5%;
+}
+
+body, .count {
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    width: 337.5px;
+    height: fit-content;
+}
+
+main, .right, .five-right {
+    flex-direction: column;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .notification, .five .right {
+    flex-direction: row;
+}
+
+.one, .two, .three {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 1rem;
+}
+
+.left {
+    flex-basis: 15%;
+}
+
+.left, .picture {
+    align-items: flex-start;
+}
+
+.right {
+    flex-basis: 85%;
+}
+
+img {
+    width: 80%;
+}
+
+img, .picture img {
+    object-fit: contain;
+}
+
+p {
+    color: hsl(219, 12%, 42%);
+}
+
+.name, .grey, .blue, h1{
+    font-weight: 800;
+}
+
+.name {
+    color: hsl(224, 21%, 14%);
+    margin-right: 0.2rem;
+}
+
+.time {
+    color: hsl(219, 14%, 63%) ;
+}
+
+.top-para {
+    margin-bottom: 0.2rem;
+ 
+}
+
+.grey, .blue {
+    margin-left: 0.2rem;
+}
+
+.blue {
+    color: hsl(219, 85%, 26%);
+}
+
+.drop-message {
+    padding: 5% 5%;
+    margin: 5% 0 0 0;
+    border: 1px solid hsl(205, 33%, 90%);
+}
+
+.drop-message, .count {
+    border-radius: 0.5rem;
+}
+
+.picture img {
+    width: 60%;
+}
+
+.picture, .mark {
+    justify-content: right;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.notification {
+    margin-bottom: 7%;
+}
+
+.count{
+    background-color: hsl(219, 85%, 26%);
+    padding: 0 0.8rem;
+}
+
+.count p {
+    color: white;
+}
+
+.mark {
+    flex-basis: 100%;
+    align-items: flex-end;
+}
+
+.circle {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 0 0 0.2rem;
+}
+
+
+@media (min-width: 850px){
+
+    *{
+        font-size: 18px;
+    }
+
+    main {
+        width: 850px;
+        max-height: fit-content;
+        padding: 3% 3% 0 3%;
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+    html, body {
+        min-width: 850px;
+        min-height: 1031.83px;
+    }
+
+    body{
+        background-color: hsl(205, 33%, 90%);
+        padding: 3% 0;
+    }
+
+    .one, .two, .three, .four, .five, .six, .seven {
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .notification {
+        margin-bottom: 4%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        margin-right: 1rem;
+    }
+
+    .drop-message {
+        padding: 3% 5%;
+    }
+
+    .seven {
+        margin: 0;
+    }
+
+    .picture {
+        flex-basis: 15%;
+    }
+
+    .five-right{
+        flex-basis: 85%;
+    }
+
+    .picture img {
+        object-fit: contain;
+        width: 60%;
+    }
+
+    .left {
+        flex-basis:7%;
+    }
+
+    .right {
+        flex-basis: 93%;
+        padding-left: 5%;
+    }
+}
